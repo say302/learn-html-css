@@ -7,7 +7,7 @@
 ## 학습 저장소 복제하기
 
 ```sh
-git clone https://github.com/seulbinim/ssam-html-css.git
+git clone https://github.com/say023/learn-html-css.git
 ```
 
 ## 최신 커밋을 로컬 저장소로 가져오기
