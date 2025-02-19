@@ -1,3 +1,46 @@
+<!-- <!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form (input 요소)</title>
+  </head>
+  <body>
+    <h1>form 관련 요소</h1>
+    <h2>input 요소</h2>
+    한 줄 입력서식
+    <form action="/">
+      <fieldset>
+        <legend>폼 서식</legend>
+        <div>
+          <label for="userName">이름</label>
+          <input type="text" id="userName" required placeholder="예)세영"/>
+        </div>
+
+        <div>
+          <label for="userPwd">비밀번호</label>
+          <input type="password" id="userPwd" required placeholder="8자리 이상"/ >
+        </div>
+
+        <div>
+          <label for="likelionSearch">검색</label>
+          <input type="search" name="user-search"="likelionSearch"required />
+          search타입은 새롭게 생겨난 것
+        </div>
+
+        <div>
+          <label for="userEmail">이메일</label>
+          <input type="email" id="userEmail"required/>
+          search타입은 새롭게 생겨난 것
+        </div>
+
+        <input type="submit" value="전송" />
+
+      </fieldset>
+    </form>
+  </body>
+</html> -->
+
 <!doctype html>
 <html lang="ko-KR">
   <head>
@@ -9,23 +52,77 @@
     <h1>form 관련 요소</h1>
     <h2>input 요소</h2>
     <!-- 한 줄 입력서식 -->
-    <form action="/">
+    <form action="https://formspree.io/f/xeqwwbwk" method="post">
       <fieldset>
         <legend>폼 서식</legend>
         <div>
           <label for="userName">이름</label>
-          <input type="text" id="userName" />
+          <input
+            type="text"
+            name="userName"
+            id="userName"
+            required
+            placeholder="예)세영"
+            maxlength="5"
+            minlength="3"
+          />
         </div>
-
         <div>
           <label for="userPwd">비밀번호</label>
-          <input type="password" id="userPwd" />
+          <input
+            type="password"
+            name="userPwd"
+            id="userPwd"
+            required
+            placeholder="8자리 이상"
+          />
         </div>
         <div>
           <label for="likelionSearch">검색</label>
-          <input type="search" id="likelionSearch" />
-          <!-- search타입은 새롭게 생겨난 것 -->
+          <input type="search" name="likelionSearch" id="likelionSearch" />
         </div>
+        <div>
+          <label for="userEmail">이메일</label>
+          <input type="email" name="userEmail" id="userEmail" required />
+        </div>
+        <div>
+          <label for="userPhone">연락처</label>
+          <input type="tell" name="userPhone" id="userPhone" required />
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            value="html"
+            name="classLikelion"
+            id="classHtml"
+          />
+          <label for="classHtml">HTML</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            value="css"
+            name="classLikelion"
+            id="classCss"
+          />
+          <label for="classCss">CSS</label>
+        </div>
+        <div>
+          <input type="checkbox" value="js" ="classLikelion" id="classJs" />
+          <label for="classJs">JS</label>
+        </div>
+
+        <div>
+          <input type="radio" value="classRoom1" ="classRoom" id="classRoom1" />
+          <label for="classRoom1">회고 1팀</label>
+        </div>
+
+        <div>
+          <input type="radio" value="classRoom2" ="classRoom" id="classRoom2" />
+          <label for="classRoom2">회고 2팀</label>
+        </div>
+
+        <input type="submit" value="전송" />
       </fieldset>
     </form>
   </body>
